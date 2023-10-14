@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <!-- external css -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchText"
+                    placeholder="Enter location"
+                />
+                <button id="searchButton">Search</button>
+            </div>
+            <div class="result-box">
+                <div class="location-box">
+                    <span id="location">Kathmandu, NP</span>
+                </div>
+                <div class="icon-box" id="icon">icon of cloud</div>
+                <div class="temperature-box"><span id="temperature">30</span> C</div>
+                <div class="weather-box" id="weather">Cloudy</div>
+                <div class="detail-box">
+                    <div class="detial-col">
+                        <p class="label">Chance of Rain</p>
+                        <p class="data"><span id="chanceOfRain">20</span>%</p>
+                    </div>
+                    <div class="detial-col">
+                        <p class="label">Humidity</p>
+                        <p class="data"><span id="humidity">70</span>%</p>
+                    </div>
+                    <div class="detial-col">
+                        <p class="label">Wind Speed</p>
+                        <p class="data"><span id="humidity">10</span>kmph</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- external js -->
+        <script src="script.js"></script>
+    </body>
+</html>
