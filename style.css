@@ -20,46 +20,50 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: var(--background);
     color: var(--text);
     font-family: "Poppins", sans-serif;
+    /* background-color: var(--background); */
+    background: linear-gradient(to bottom, #56ccf2, #2f80ed);
 }
 
 .container {
-    width: 500px;
-    padding: 1rem;
-    background-color: var(--card);
-    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
 }
 
 .search-box,
 .result-box {
-    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    padding: 1rem;
 }
 
 .result-box {
     flex-direction: column;
     gap: 0;
+    margin-top: 2rem;
 }
 
 #searchText,
 #searchButton {
     height: 40px;
-    border-radius: 1rem;
+    border-radius: 15px;
     padding: 10px;
     font-size: 1rem;
 }
 
 #searchText {
     width: 70%;
+    border: none;
 }
 
 #searchButton {
     width: 30%;
+    border: none;
 }
 
 /* result box */
@@ -72,6 +76,7 @@ body {
     font-size: 5rem;
     padding: 0;
     font-weight: 500;
+    margin-left: 1rem;
 }
 
 .weather-box {
@@ -81,10 +86,17 @@ body {
 
 .detail-box {
     width: 100%;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+}
+
+.bar{
+    height: 50px;
+    width: 1px;
+    background-color: white;
 }
 
 .label {
