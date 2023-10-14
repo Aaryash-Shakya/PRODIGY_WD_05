@@ -28,7 +28,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .search-box,
@@ -46,6 +46,7 @@ body {
     flex-direction: column;
     gap: 0;
     margin-top: 2rem;
+    padding: 2rem 1rem;
 }
 
 #searchText,
@@ -64,19 +65,36 @@ body {
 #searchButton {
     width: 30%;
     border: none;
+    cursor: pointer;
 }
 
 /* result box */
 .location-box {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
 }
 
-.temperature-box {
-    font-size: 5rem;
-    padding: 0;
+.icon-box{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+.icon-box img{
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.temperature-box{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.temperature-box .actual-temperature{
+    font-size: 4.5rem;
     font-weight: 500;
-    margin-left: 1rem;
+    line-height: 5rem;
 }
 
 .weather-box {
