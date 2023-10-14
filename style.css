@@ -37,7 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 1rem;
 }
@@ -74,27 +74,29 @@ body {
     margin-bottom: 1rem;
 }
 
-.icon-box{
+.icon-box {
     width: 100%;
     display: grid;
     place-items: center;
     margin-bottom: 1rem;
 }
-.icon-box img{
+
+.icon-box img {
     height: 120px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.temperature-box{
+.temperature-box {
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.temperature-box .actual-temperature{
+.temperature-box .actual-temperature {
     font-size: 4.5rem;
     font-weight: 500;
     line-height: 5rem;
+    margin-left: 0.8rem;
 }
 
 .weather-box {
@@ -111,7 +113,7 @@ body {
     text-align: center;
 }
 
-.bar{
+.bar {
     height: 50px;
     width: 1px;
     background-color: white;
