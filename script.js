@@ -1,6 +1,5 @@
 // import api key from key.js
-const apiKey = import('./key.js')
-console.log(apiKey);
+import apiKey from './key.js';
 
 // get elements
 const searchText = document.querySelector('#searchText')
@@ -17,7 +16,7 @@ const windSpeed = document.querySelector('#windSpeed')
 
 // fetch api
 const fetchData = (location) => {
-    fetch(`https://api.weatherapi.com/v1/current.json?key=876f0570311f40b095b121450231410&q=${location}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`)
         .then(res => {
             if (!res.ok) {
                 throw new Error('Network response was not ok')
@@ -45,11 +44,18 @@ const fetchData = (location) => {
 
 // button event listener
 searchButton.addEventListener('click', ()=>{
-    if(searchText.innerText===''){
-        alert('Enter a location first')
+    if(searchText.value===''){
+        alert("Location can't be empty")
     }
     else{
-        fetchData(searchText.innerText)
+        fetchData(searchText.value)
+    }
+})
+
+// add button trigger with enter key
+searchText.addEventListener('keyup',e=>{
+    if(e.key === 'Enter'){
+        searchButton.click()
     }
 })
 

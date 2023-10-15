@@ -22,7 +22,7 @@
                     <span id="address">-------, -------</span>
                 </div>
                 <div class="icon-box">
-                    <img id="icon" src="img/sun.png" >
+                    <img id="icon" src="img/sun.png" />
                 </div>
                 <div class="temperature-box">
                     <p class="actual-temperature">
@@ -35,8 +35,8 @@
                 <div class="weather-box" id="weather">------</div>
                 <div class="detail-box">
                     <div class="detial-col">
-                        <p class="label">Precipitation (mm)</p>
-                        <p class="data"><span id="chanceOfRain">--</span> %</p>
+                        <p class="label">Precipitation</p>
+                        <p class="data"><span id="chanceOfRain">--</span> mm</p>
                     </div>
                     <div class="bar"></div>
                     <div class="detial-col">
@@ -52,7 +52,12 @@
             </div>
         </div>
 
+        <footer>
+            Powered by
+            <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+        </footer>
+
         <!-- external js -->
-        <script src="script.js"></script>
+        <script type="module" src="script.js"></script>
     </body>
 </html>
