@@ -55,6 +55,7 @@ body {
     border-radius: 15px;
     padding: 10px;
     font-size: 1rem;
+    box-shadow: -1px 1px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 #searchText {
@@ -66,6 +67,13 @@ body {
     width: 30%;
     border: none;
     cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+#searchButton:hover {
+    font-size: 1.05rem;
+    filter: brightness(0.9);
 }
 
 /* result box */
@@ -114,7 +122,7 @@ body {
 }
 
 .bar {
-    height: 50px;
+    height: 100px;
     width: 1px;
     background-color: white;
 }
@@ -123,13 +131,13 @@ body {
     font-size: 0.6rem;
 }
 
-footer{
+footer {
     position: absolute;
     bottom: 0;
     right: 0;
     color: white;
     font-size: 0.8rem;
 }
-footer a{
+footer a {
     color: whitesmoke;
 }
