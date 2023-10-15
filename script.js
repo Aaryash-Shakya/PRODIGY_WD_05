@@ -39,6 +39,7 @@ const fetchData = (location) => {
 
             // Assign data in html
             address.innerText = `${data.location.name}, ${data.location.country}`
+            icon.setAttribute("src", `${data.current.condition.icon}`)
             temperature.innerText = data.current.temp_c
             feelsLikeTemperature.innerText = data.current.feelslike_c
             weather.innerText = data.current.condition.text

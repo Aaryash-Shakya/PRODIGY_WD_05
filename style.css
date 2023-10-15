@@ -86,13 +86,15 @@ body {
     width: 100%;
     display: grid;
     place-items: center;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .icon-box img {
-    height: 120px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
+    scale: 1.5;
 }
 
 .temperature-box {
@@ -113,12 +115,17 @@ body {
 }
 
 .detail-box {
-    width: 100%;
+    width: 90%;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem 10px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 10px;
 }
 
 .bar {
